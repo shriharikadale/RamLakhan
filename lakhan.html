@@ -1,0 +1,13 @@
+<template>
+     <lightning-card title="Custom Parent to Child Comp">
+       <div class="slds-m-around_large" >
+<!--<p>Parent Component() {</p>
+<c-ram valuefromparent={Value}></c-ram>
+<p>}</p>-->
+         <template for:each={accounts} for:item="account">
+           <p key={account.Id}>{account.Name}</p>
+         </template>
+      </div>  
+  </lightning-card>
+
+</template>
